@@ -18,9 +18,10 @@
           <input type="text" name="codMerc"
           ng-model="codMerc"
           ng-required="true"
-          ng-pattern="/^[0-9a-zA-Z]{1,100}$/"
+          ng-pattern="/^[0-9]{1,100}$/"
           class="form-control" placeholder="Digite o codigo da mercadoria"/>
           <br/>
+          <span  class="alert alert-danger" ng-show="myform.codMerc.$error.pattern">Digitar apenas numeros!</span>
         </div>
         <br/>
         <div>
@@ -85,5 +86,5 @@
 </div>
 </body>
   <br/>
-  <footer><small>Tamires Olivera</small></footer>
+  <footer><small>Tamires Oliveira</small></footer>
 </html>
